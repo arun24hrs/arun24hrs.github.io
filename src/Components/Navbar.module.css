@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.navbar{
+    border-bottom: 1px solid white;
+    max-height: 65px;
+    min-height: 65px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 300px;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navMenu{
+    display: flex;
+    gap: 35px;
+    padding: 5px;
+}
+
+.navMenu>a{
+    color: #86C232;
+    position: relative;
+   
+}
+
+.navMenu>a:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: #86C232;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+.navMenu>a:hover{
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.navMenu>a:hover:after{
+    width: 100%;
+}
+
+.btnContainer{
+    display: flex;
+    gap: 15px;
+}
+
+.btnContainer>button{
+    padding: 7px 15px;
+    border: 1px solid #86C232;
+    border-radius: 8px;
+}
+
+.contactBtn{
+    color: #86C232;
+}
+
+.contactBtn:hover{
+    color: #fff;
+    background-color: #86C232;
+    transition: 0.5s;
+}
+
+.resumeBtn{
+    background-color: #86C232;
+}
+
+.resumeBtn:hover{
+    background-color: #61892F;
+    transition: 0.5s;
+}
+
+
+/* ================= MEDIA QUERIES ============== */
+
