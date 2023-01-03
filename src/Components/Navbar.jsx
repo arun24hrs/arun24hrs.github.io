@@ -9,15 +9,14 @@ const Navbar = () => {
     <div className={style.navbar}>
       <div className={style.logoContainer}>
         <img className={style.logo} src={logo} alt="Logo" />
-        <div className={style.navMenu}>
+      </div>
+
+      <div className={style.navMenu}>
         <a href='#'>Home</a>
         <a href='#'>About Me</a>
         <a href='#'>Projects</a>
         <a href='#'>Tech-Stack</a>
       </div>
-      </div>
-
-      
 
       <div className={style.btnContainer}>
         <button className={style.contactBtn}>Contact</button>

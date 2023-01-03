@@ -20,12 +20,6 @@
     width: 300px;
 }
 
-.logoContainer{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
 .navMenu{
     display: flex;
     gap: 35px;
