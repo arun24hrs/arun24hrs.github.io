@@ -9,8 +9,6 @@ import {
   Image,
   Icon,
   IconButton,
-  createIcon,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import {DownloadIcon} from "@chakra-ui/icons"
 import photo from "../Images/portfolio_dp.png";
