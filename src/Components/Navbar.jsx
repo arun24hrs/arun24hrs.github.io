@@ -1,5 +1,4 @@
 
-import { StylesProvider } from '@chakra-ui/react'
 import React from 'react'
 import style from './Navbar.module.css';
 import logo from "../Images/pfolio_logo.png"
