@@ -12,6 +12,7 @@ import {
   createIcon,
   useColorModeValue,
 } from "@chakra-ui/react";
+import {DownloadIcon} from "@chakra-ui/icons"
 import photo from "../Images/portfolio_dp.png";
 
 export default function Header() {
@@ -23,7 +24,7 @@ export default function Header() {
         py={{ base: 20, md: 28 }}
         direction={{ base: "column", md: "row" }}
       >
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+        <Stack flex={1} p={10} spacing={{ base: 5, md: 10 }}>
           <Heading
             lineHeight={0}
             fontWeight={600}
@@ -84,6 +85,7 @@ export default function Header() {
               size={"lg"}
               fontWeight={"normal"}
               px={6}
+              leftIcon={<DownloadIcon bg="#86C232"/>}
             >
               Resume
             </Button>
@@ -96,21 +98,12 @@ export default function Header() {
           position={"relative"}
           w={"full"}
         >
-          <Box
-            position={"relative"}
-            height={"300px"}
-            rounded={"2xl"}
-            width={"full"}
-            overflow={"hidden"}
-          >
-            <Image
+          <Image
               alt={"Hero Image"}
-              align={"center"}
-              w={"52%"}
-              h={"100%"}
+              w={"350px"}
+              h={"auto"}
               src={photo}
             />
-          </Box>
         </Flex>
       </Stack>
     </Container>
