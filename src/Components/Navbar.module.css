@@ -8,6 +8,7 @@
 
 .navbar{
     border-bottom: 1px solid white;
+    position: sticky;
     max-height: 65px;
     min-height: 65px;
     padding: 10px 30px;

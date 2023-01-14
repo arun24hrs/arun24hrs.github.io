@@ -84,6 +84,7 @@ export default function Header() {
               fontWeight={"normal"}
               px={6}
               leftIcon={<DownloadIcon bg="#86C232"/>}
+              _hover={{bg: "brand.400"}}
             >
               Resume
             </Button>
