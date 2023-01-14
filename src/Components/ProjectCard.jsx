@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   Heading,
-  Image,
   Text,
   Stack,
   useColorModeValue,
@@ -11,7 +10,8 @@ import {
   Link
 } from "@chakra-ui/react";
 
-const ProjectCard = ({ image, name, type, about, site, github,tech, duration }) => {
+const ProjectCard = ({ url, name, type, about, site, github,tech, duration }) => {
+    console.log(url)
   return (
     <Flex py={6} bg="brand.500" direction="row">
       <Box
@@ -31,7 +31,7 @@ const ProjectCard = ({ image, name, type, about, site, github,tech, duration }) 
           mb={6}
           pos={"relative"}
         >
-          <Image src={image} layout={"fill"} />
+          <img src={url} alt="Hero Image" layout={"fill"} />
         </Box>
         <Stack>
           <Text
@@ -54,8 +54,8 @@ const ProjectCard = ({ image, name, type, about, site, github,tech, duration }) 
           </Heading>
           <Text color={"gray.300"}>{about}</Text>
 
-          <Text><span style={{color: "#6B6E70"}}>Duration: </span>{duration}</Text>
-          <Text><span style={{color: "#6B6E70"}}>Tech Stack: </span>{tech}</Text>
+          <Text><span style={{color: "#86C232"}}>Duration: </span>{duration}</Text>
+          <Text><span style={{color: "#86C232"}}>Tech Stack: </span>{tech}</Text>
         </Stack>
         <Stack
           mt={6}
