@@ -11,7 +11,7 @@ import {
   Link
 } from "@chakra-ui/react";
 
-const ProjectCard = ({ image, name, type, about, site, github,tech }) => {
+const ProjectCard = ({ image, name, type, about, site, github,tech, duration }) => {
   return (
     <Flex py={6} bg="brand.500" direction="row">
       <Box
@@ -53,7 +53,8 @@ const ProjectCard = ({ image, name, type, about, site, github,tech }) => {
             {type}
           </Heading>
           <Text color={"gray.300"}>{about}</Text>
-          <br />
+
+          <Text><span style={{color: "#6B6E70"}}>Duration: </span>{duration}</Text>
           <Text><span style={{color: "#6B6E70"}}>Tech Stack: </span>{tech}</Text>
         </Stack>
         <Stack

@@ -11,7 +11,8 @@ const data = [
         "Twiik is a website that provides a fitness coach. People who are willing to virtually connect to a fitness coach can be here and fulfill their wish of being fit and healthy.",
       site: "https://lighthearted-horse-c63ac1.netlify.app/",
       github: "https://github.com/arun24hrs/twiik_clone",
-      tech: "HTML, CSS"
+      tech: "HTML, CSS",
+      duration: "5 days"
     },
     {
       image: "../Images/leadiq.png",
@@ -21,7 +22,8 @@ const data = [
       "LeadIQ is a platform of B2B sales prospecting tools. Find prospect data, track buying signals, & personalize cold outreach for outbound prospecting.",
       site: "https://verdant-pegasus-7472d3.netlify.app/",
       github: "https://github.com/VivBelwal/LeadiQ",
-      tech: "JS, HTML, CSS"
+      tech: "JS, HTML, CSS",
+      duration: "5 days"
     },
     {
         image: "../Images/leadiq.png",
@@ -31,6 +33,8 @@ const data = [
           "LeadIQ is a platform of B2B sales prospecting tools. Find prospect data, track buying signals, & personalize cold outreach for outbound prospecting.",
         site: "https://verdant-pegasus-7472d3.netlify.app/",
         github: "https://github.com/VivBelwal/LeadiQ",
+        tech: "JS, HTML, CSS",
+      duration: "5 days"
       }
   ];
 
