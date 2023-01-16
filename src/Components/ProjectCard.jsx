@@ -5,13 +5,14 @@ import {
   Heading,
   Text,
   Stack,
+  Image,
   useColorModeValue,
   Button,
   Link
 } from "@chakra-ui/react";
 
-const ProjectCard = ({ url, name, type, about, site, github,tech, duration }) => {
-    console.log(url)
+const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) => {
+    // console.log(url)
   return (
     <Flex py={6} bg="brand.500" direction="row">
       <Box
@@ -30,8 +31,9 @@ const ProjectCard = ({ url, name, type, about, site, github,tech, duration }) =>
           mx={-6}
           mb={6}
           pos={"relative"}
+          backgroundColor="blackAlpha.800"
         >
-          <img src={url} alt="Hero Image" layout={"fill"} />
+          <Image src={img} alt="Hero Image" layout={"fill"} height="100%" _hover={{opacity: "80%"}}/>
         </Box>
         <Stack>
           <Text

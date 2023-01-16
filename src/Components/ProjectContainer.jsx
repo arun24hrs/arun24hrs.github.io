@@ -1,11 +1,15 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import styles from "./ProjectContainer.module.css";
+import twiik from "../Images/twiik.png";
+import leadiq from "../Images/leadiq.png";
+import ketto from "../Images/ketto.png";
+
 
 const data = [
   {
     url: "https://drive.google.com/file/d/1MsS1-kMitpehK4FL2b1S8chQFGfL3-Ex/view?usp=sharing",
-    img: "../Images/twiik.png",
+    img: twiik,
     name: "shapelink.com",
     type: "Solo Project",
     about:
@@ -17,7 +21,7 @@ const data = [
   },
   {
     url: "https://drive.google.com/file/d/1m6AudGMMbGQQlKLCcLd72jqlCA38W0dl/view?usp=sharing",
-    img: "../Images/leadiq.png",
+    img: leadiq,
     name: "leadiq.com",
     type: "Group Project",
     about:
@@ -29,7 +33,7 @@ const data = [
   },
   {
     url: "https://drive.google.com/file/d/1Jf2I5kaFwLIJUV6cPTOrPyz05Keddb0z/view?usp=sharing",
-    img: "../Images/ketto.png",
+    img: ketto,
     name: "ketto.com",
     type: "Group Project",
     about:

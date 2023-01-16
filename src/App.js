@@ -1,9 +1,10 @@
 import "./App.css";
 import Header from "./Components/Header";
-import Nav from "./Components/Nav";
+
 import Navbar from "./Components/Navbar";
-import ProjectCard from "./Components/ProjectCard";
 import ProjectContainer from "./Components/ProjectContainer";
+import TechSkills from "./Components/TechSkills";
+import Tools from "./Components/Tools";
 
 
 
@@ -12,8 +13,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-      
       <ProjectContainer/>
+      <TechSkills/>
+      <Tools/>
     </div>
   );
 }
