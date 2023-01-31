@@ -10,6 +10,7 @@ import {
   Button,
   Link
 } from "@chakra-ui/react";
+import {ExternalLinkIcon} from "@chakra-ui/icons"
 
 const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) => {
     // console.log(url)
@@ -33,7 +34,8 @@ const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) =>
           pos={"relative"}
           backgroundColor="blackAlpha.800"
         >
-          <Image src={img} alt="Hero Image" layout={"fill"} height="100%" _hover={{opacity: "80%"}}/>
+          <Link href={site} isExternal><Image src={img} alt="Hero Image" layout={"fill"} height="100%" opacity={"60%"} _hover={{opacity: "100%", zIndex:"-1"}}/>
+          <ExternalLinkIcon opacity={"60%"} position={"absolute"} top="50%" left={"50%"} color={"white"} bg="brand.300"/></Link>
         </Box>
         <Stack>
           <Text
@@ -70,13 +72,13 @@ const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) =>
             <Button
               variant="ghost"
               border={"1px solid white"}
-              _hover={{ bg: "brand.500" }}
+              _hover={{ bg: "brand.500", color: "brand.300", borderColor: "brand.500" }}
             >
               Visit Website
             </Button>
           </Link>
           <Link href={github} _hover={{ textDecoration: "none" }} isExternal>
-            <Button variant="solid" bg="brand.500" _hover={{ bg: "brand.400" }}>
+            <Button variant="solid" bg="brand.500" color="brand.300" _hover={{ bg: "brand.400", color: "white" }}>
               Source Code
             </Button>
           </Link>

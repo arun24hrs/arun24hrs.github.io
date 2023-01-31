@@ -1,0 +1,103 @@
+.heading{
+
+    color: #86C232;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 40px;
+    letter-spacing: 2px;
+
+}
+
+.github{
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.github>div>h1{
+    font-size: 50px;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+.github2{
+    display: none;
+}
+.github3{
+    display: none;
+}
+
+
+.images{
+    width: 70%;
+    display: grid;
+    margin: auto;
+    gap: 50px;
+}
+.images>div>img{
+    width: 90%;
+}
+@media all and (min-width: 500px) and (max-width: 1000px){
+    .github{
+    
+        width: 90%;
+        margin: auto;
+    }
+    .github>div>h1{
+        font-size: 30px;
+    }
+    .github>div>h1{
+        font-size: 30px;
+    }   
+    
+    .images{
+        width: 80%;
+        display: grid;
+        margin: auto;
+        gap: 30px;
+    }
+    .images>div>img{
+        width: 90%;
+    }
+    .github2{
+        display: block;
+    }
+    .github1{
+        display: none;
+    }
+    .github3{
+        display: none;
+    }
+}
+@media all and (min-width: 50px) and (max-width: 500px){
+    .github{
+    
+        width: 100%;
+    }
+    .github>div>h1{
+        font-size: 25x;
+    }
+    .github>div>h1{
+        font-size: 12px;
+    }
+    
+    .images{
+        width: 90%;
+        display: grid;
+        margin: auto;
+        gap: 20px;
+    }
+    .images>div>img{
+        width: 90%;
+    }
+    .github1{
+        display: none;
+    }
+    .github2{
+        display: none;
+    }
+    .github3{
+        display: inline-block;
+    }
+}

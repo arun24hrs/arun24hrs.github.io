@@ -1,6 +1,7 @@
 .container {
     background-color: #86C232;
-    padding: 20px
+    padding: 20px;
+    padding-bottom: 100px;
 }
 
 .heading{
