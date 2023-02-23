@@ -9,47 +9,43 @@ import {
   Image,
   Icon,
   IconButton,
+  AspectRatio,
 } from "@chakra-ui/react";
-import {DownloadIcon} from "@chakra-ui/icons"
 import photo from "../Images/portfolio_dp.png";
+import video from "../Images/bgVideo.mp4";
 
-export default function Header() {
+export default function About() {
   return (
-    <Container maxW={"7xl"} mt={10}>
+    <Container id="about" className="about section" maxW={"7xl"} p={0}>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 28 }}
+        py={{ base: 5, md: 20 }}
         direction={{ base: "column", md: "row" }}
-      >
+        >
         <Stack flex={1} p={10} spacing={{ base: 5, md: 10 }}>
+            
+        <Heading color={"brand.500"} borderBottom={"3px solid white"} width={"130px"}>About</Heading>
           <Heading
             lineHeight={0}
             fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", lg: "5xl" }}
+            fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
           >
             <Text
-              as={"span"}
+              id="user-detail-name"
               size="sm"
-              position={"relative"}
-              _after={{
-                content: "''",
-                width: "full",
-                height: "30%",
-                position: "absolute",
-                bottom: 1,
-                left: 0,
-                bg: "red.400",
-                zIndex: -1,
-              }}
             >
               Arun Kumar Rana
             </Text>
           </Heading>
-          <Text fontSize={"2xl"} color={"brand.500"}>
+          <Text fontSize={{ base: "xl", sm: "3xl" }} color={"brand.500"}>
             Full Stack Web Developer
           </Text>
-          <Text color={"gray.400"}>
+          <Text
+            color={"gray.400"}
+            fontSize={{ base: "sm", sm: "xl" }}
+            id="user-detail-intro"
+          >
             An enthusiastic full stack web developer possessing skills of
             developing websites using JavaScript, React.js, TypeScript, HTML and
             CSS. Constantly learning and honing problem solving skills to be a
@@ -61,6 +57,7 @@ export default function Header() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
+            <a href="#contact">
             <Button
               variant={"outline"}
               rounded={"full"}
@@ -76,18 +73,25 @@ export default function Header() {
             >
               Contact
             </Button>
+            </a>
+            <a
+          href="https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=sharing"
+          target="_blank"
+        >
             <Button
+              id="resume-button-2"
               variant="solid"
               colorScheme={"brand"}
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              leftIcon={<DownloadIcon bg="#86C232"/>}
-              _hover={{bg: "brand.400"}}
+              // leftIcon={<DownloadIcon bg="#86C232"/>}
+              _hover={{ bg: "brand.400" }}
             >
               Resume
             </Button>
+            </a>
           </Stack>
         </Stack>
         <Flex
@@ -98,14 +102,15 @@ export default function Header() {
           w={"full"}
         >
           <Image
-              alt={"Hero Image"}
-              w={"350px"}
-              h={"auto"}
-              src={photo}
-            />
+            className="home-img"
+            alt={"Hero Image"}
+            w={"350px"}
+            h={"auto"}
+            src={photo}
+            mt={{ base: "-50px", sm: "20px" }}
+          />
         </Flex>
       </Stack>
     </Container>
   );
 }
-

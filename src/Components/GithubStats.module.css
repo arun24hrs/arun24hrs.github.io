@@ -75,8 +75,11 @@
     
         width: 100%;
     }
+    .heading{
+        font-size: 20px;
+    }
     .github>div>h1{
-        font-size: 25x;
+        font-size: 25px;
     }
     .github>div>h1{
         font-size: 12px;

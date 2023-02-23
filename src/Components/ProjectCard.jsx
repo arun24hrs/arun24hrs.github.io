@@ -15,26 +15,28 @@ import {ExternalLinkIcon} from "@chakra-ui/icons"
 const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) => {
     // console.log(url)
   return (
-    <Flex py={6} bg="brand.500" direction="row">
+    <Flex py={6} bg="brand.500" class="project-card">
       <Box
-        maxW={"400px"}
+        maxW={{base: "280px", sm: "400px",md: "550px", lg: "550px"}}
         w={"full"}
         bg={useColorModeValue("brand.300", "gray.900")}
         boxShadow={"2xl"}
         rounded={"md"}
         p={6}
+        m={"20px"}
         overflow={"hidden"}
       >
         <Box
-          h={"210px"}
+          h={{base: "180px", md: "210px"}}
           bg={"gray.100"}
           mt={-6}
           mx={-6}
           mb={6}
           pos={"relative"}
           backgroundColor="blackAlpha.800"
+          overflow={"hidden"}
         >
-          <Link href={site} isExternal><Image src={img} alt="Hero Image" layout={"fill"} height="100%" opacity={"60%"} _hover={{opacity: "100%", zIndex:"-1"}}/>
+          <Link href={site} isExternal><Image src={img} alt="Hero Image" layout={"fill"}  overflow={"hidden"} opacity={"60%"} _hover={{opacity: "100%", zIndex:"-1"}}/>
           <ExternalLinkIcon opacity={"60%"} position={"absolute"} top="50%" left={"50%"} color={"white"} bg="brand.300"/></Link>
         </Box>
         <Stack>
@@ -42,8 +44,10 @@ const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) =>
             color={"brand.500"}
             textTransform={"uppercase"}
             fontWeight={800}
-            fontSize={"lg"}
+            fontSize={{base: "md", md: "lg"}}
             letterSpacing={1.1}
+            className={"project-title"}
+
           >
             {name}
           </Text>
@@ -51,15 +55,15 @@ const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) =>
             bg={"brand.500"}
             color={useColorModeValue("brand.300", "white")}
             p={1}
-            fontSize={"xl"}
+            fontSize={{base: "md",md:"xl"}}
             fontFamily={"body"}
           >
             {type}
           </Heading>
-          <Text color={"gray.300"}>{about}</Text>
+          <Text color={"gray.300"} className="project-description">{about}</Text>
 
           <Text><span style={{color: "#86C232"}}>Duration: </span>{duration}</Text>
-          <Text><span style={{color: "#86C232"}}>Tech Stack: </span>{tech}</Text>
+          <Text className="project-tech-stack"><span style={{color: "#86C232"}}>Tech Stack: </span>{tech}</Text>
         </Stack>
         <Stack
           mt={6}
@@ -68,17 +72,18 @@ const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) =>
           align={"Flex"}
           justifyContent="space-around"
         >
-          <Link href={site} _hover={{ textDecoration: "none" }} isExternal>
+          <Link class="project-deployed-link" href={site} _hover={{ textDecoration: "none" }} isExternal>
             <Button
               variant="ghost"
               border={"1px solid white"}
+              size={{base: "sm", md: "md"}}
               _hover={{ bg: "brand.500", color: "brand.300", borderColor: "brand.500" }}
             >
               Visit Website
             </Button>
           </Link>
-          <Link href={github} _hover={{ textDecoration: "none" }} isExternal>
-            <Button variant="solid" bg="brand.500" color="brand.300" _hover={{ bg: "brand.400", color: "white" }}>
+          <Link className="project-github-link" href={github} _hover={{ textDecoration: "none" }} isExternal>
+            <Button variant="solid" bg="brand.500" color="brand.300" _hover={{ bg: "brand.400", color: "white" }} size={{base: "sm", md: "md"}}>
               Source Code
             </Button>
           </Link>

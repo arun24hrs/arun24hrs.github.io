@@ -1,10 +1,10 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import styles from "./ProjectContainer.module.css";
 import twiik from "../Images/twiik.png";
 import leadiq from "../Images/leadiq.png";
 import ketto from "../Images/ketto.png";
-
+import homeDecore from "../Images/homeDecore.png";
+import { Box, Heading } from "@chakra-ui/react";
 
 const data = [
   {
@@ -18,6 +18,18 @@ const data = [
     github: "https://github.com/arun24hrs/twiik_clone",
     tech: "HTML, CSS",
     duration: "5 days",
+  },
+  {
+    url: "https://drive.google.com/file/d/1NmMziggDj9QDkg4G97C7fQsk74H8DVu2/view?usp=sharing",
+    img: homeDecore,
+    name: "homedecore.com",
+    type: "Group Project",
+    about:
+      "Home Decore is a clone of Pepperfry that caters the need furnitures, lamps, carpets, home decore at best price. People who are planning to redefine their home and looking for home items can visit.",
+    site: "https://home-interior-capitaln.vercel.app/",
+    github: "https://github.com/capitalN/home_interior",
+    tech: "Next.js, CSS, Redux",
+    duration: "6 days",
   },
   {
     url: "https://drive.google.com/file/d/1m6AudGMMbGQQlKLCcLd72jqlCA38W0dl/view?usp=sharing",
@@ -47,15 +59,40 @@ const data = [
 
 const ProjectContainer = () => {
   return (
-    <section className={styles.container}>
-      <h1 className={styles.heading}>Projects</h1>
-      <div className={styles.cardHolder}>
+    <Box
+      backgroundColor="brand.500"
+      padding="20px"
+      paddingBottom="100px"
+      id="projects"
+    >
+      <Heading
+        backgroundColor="brand.500"
+        fontFamily={"cursive"}
+        color="#222629"
+        fontSize="28px"
+        fontWeight="600"
+        textTransform="uppercase"
+        margin="40px"
+        letterSpacing="2px"
+      >
+        Projects
+      </Heading>
+      <Box
+        width={"80%"}
+        m="auto"
+        display={"grid"}
+        gridTemplateColumns={{ base: "repeat(1,1fr)", lg: "repeat(2,1fr)" }}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
         {data.map((el) => (
           <ProjectCard key={el.name} {...el} />
         ))}
-      </div>
-    </section>
+      </Box>
+    </Box>
   );
 };
+
+// className={styles.cardHolder}
 
 export default ProjectContainer;

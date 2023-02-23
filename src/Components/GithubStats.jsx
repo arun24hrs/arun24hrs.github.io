@@ -10,16 +10,16 @@ console.log(window.innerWidth)
         <div className={styles.github}>
             <div>
                 <h2 className={styles.heading}>My Github Statistics</h2>
-                <div className={styles.images}>
-                    <div>
+                <div className={styles.images} >
+                    <div id="github-streak-stats">
                         <img src="https://github-readme-streak-stats.herokuapp.com/?user=arun24hrs&theme=dark&hide_border=false" alt="" />
                     </div>
                     
-                    <div>
+                    <div id="github-top-langs">
                         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arun24hrs&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="" />
                     </div>
                 
-                    <div>
+                    <div id="github-stats-card">
                         <img src="https://github-readme-stats.vercel.app/api?username=arun24hrs&theme=algolia&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" alt="" />
                         
                     </div>
