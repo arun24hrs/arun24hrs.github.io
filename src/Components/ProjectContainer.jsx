@@ -62,6 +62,7 @@ const ProjectContainer = () => {
     <Box
       backgroundColor="brand.500"
       padding="20px"
+      py="40px"
       paddingBottom="100px"
       id="projects"
     >

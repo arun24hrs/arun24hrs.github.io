@@ -38,9 +38,18 @@ export default function Nav() {
   //   setSticky(false);
   // }
 
-  const handle = () => {
-    onToggle();
-  }
+  const handleDownload = () => {
+    
+    fetch('resume.pdf').then(response => {
+        response.blob().then(blob => {
+            const fileURL = window.URL.createObjectURL(blob);
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Arun_Rana_Resume.pdf';
+            alink.click();
+        })
+    })
+}
 
   return (
     <Flex
@@ -51,14 +60,17 @@ export default function Nav() {
       padding={{ base: "5px 14px", lg: "10px 30px" }}
       justifyContent="space-between"
       alignItems={"center"}
-      position={"sticky"}
+      position={"fixed"}
+      top={0}
+      width="100%"
+      zIndex={10000}
     >
       {/* <Button bgColor={"brand.300"} size={"sm"} onClick={handle} _hover={{border:"1px solid white"}} display={{ base: "block", lg: "none" }}>{isOpen ? <CloseIcon /> : <HamburgerIcon />}</Button> */}
 
       <Menu >
         <MenuButton as={Button} display={{base: "block", lg: "none"}} onClick={onToggle} variant={"ghost"} _hover={{bgColor:"brand.300", border:"1px solid"}} _active={{bgColor:"none", border:"2px solid #86C232"}}> <HamburgerIcon/></MenuButton>
         <MenuList bgColor="brand.300">
-          <a href="#">Home</a>
+          <a href="#" width="100%">Home</a>
           <MenuDivider />
           <a href="#about">About</a>
           <MenuDivider />
@@ -124,6 +136,20 @@ export default function Nav() {
         >
           Skills
         </Link>
+
+        <Link
+          color={"#86C232"}
+          fontSize="lg"
+          _hover={{
+            color: "white",
+            borderBottom: "4px solid #86C232",
+            transition: "0.5s",
+          }}
+          href="#github-stats"
+          className="nav-link skills"
+        >
+          GitHub Stats
+        </Link>
       </Flex>
 
       <Flex gap={{ base: "8px", lg: "15px" }}>
@@ -152,6 +178,7 @@ export default function Nav() {
             borderRadius={50}
             _hover={{ backgroundColor: "brand.400" }}
             size={{ base: "xs", sm: "sm", lg: "md" }}
+            onClick={handleDownload}
           >
             Resume
           </Button>

@@ -7,21 +7,35 @@ import {
   Text,
   Button,
   Image,
-  Icon,
-  IconButton,
-  AspectRatio,
 } from "@chakra-ui/react";
-import photo from "../Images/portfolio_dp.png";
-import video from "../Images/bgVideo.mp4";
+import bg from "../Images/portfolio_background.png";
+import photo from "../Images/dp.jpg";
 
 export default function About() {
+  const handleDownload = () => {
+    
+    fetch('resume.pdf').then(response => {
+        response.blob().then(blob => {
+            const fileURL = window.URL.createObjectURL(blob);
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Arun_Rana_Resume.pdf';
+            alink.click();
+        })
+    })
+}
   return (
-    <Container id="about" className="about section" maxW={"7xl"} p={0}>
+    <Container id="about" className="about section" maxW={"7xl"} p={0}  >
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 5, md: 20 }}
+        bgImage={bg}
+        bgRepeat={"no-repeat"}
+        bgSize={"contain"}
+        w={"98vw"}
         direction={{ base: "column", md: "row" }}
+        
         >
         <Stack flex={1} p={10} spacing={{ base: 5, md: 10 }}>
             
@@ -86,7 +100,7 @@ export default function About() {
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              // leftIcon={<DownloadIcon bg="#86C232"/>}
+              onClick={handleDownload}
               _hover={{ bg: "brand.400" }}
             >
               Resume
@@ -104,8 +118,10 @@ export default function About() {
           <Image
             className="home-img"
             alt={"Hero Image"}
-            w={"350px"}
-            h={"auto"}
+            borderRadius={"40%"}
+            w={"260px"}
+            h={"250px"}
+            border={"5px solid #474B4F"}
             src={photo}
             mt={{ base: "-50px", sm: "20px" }}
           />

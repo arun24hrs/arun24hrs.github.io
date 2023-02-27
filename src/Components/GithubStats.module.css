@@ -13,8 +13,8 @@
     
     width: 80%;
     margin: auto;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 .github>div>h1{
     font-size: 50px;
@@ -64,10 +64,10 @@
         display: block;
     }
     .github1{
-        display: none;
+        display: block;
     }
     .github3{
-        display: none;
+        display: block;
     }
 }
 @media all and (min-width: 50px) and (max-width: 500px){
@@ -95,7 +95,8 @@
         width: 90%;
     }
     .github1{
-        display: none;
+        display: block;
+        width: 319px;;
     }
     .github2{
         display: none;

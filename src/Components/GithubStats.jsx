@@ -1,15 +1,14 @@
-import { background } from '@chakra-ui/react'
 import GitHubCalendar from 'react-github-calendar'
 import styles from './GithubStats.module.css'
 
 
 const GithubStats = () => {
-console.log(window.innerWidth)
+// console.log(window.innerWidth)
 
     return(
-        <div className={styles.github}>
-            <div>
-                <h2 className={styles.heading}>My Github Statistics</h2>
+        <div className={styles.github} >
+            <h2 id="github-stats" className={styles.heading}>My Github Statistics</h2>
+            <div >
                 <div className={styles.images} >
                     <div id="github-streak-stats">
                         <img src="https://github-readme-streak-stats.herokuapp.com/?user=arun24hrs&theme=dark&hide_border=false" alt="" />
@@ -26,7 +25,7 @@ console.log(window.innerWidth)
                 
                 </div>
                 <div className={styles.github1}>
-                    <GitHubCalendar username='arun24hrs' year={2023} transformTotalCount={false} blockSize={20} fontSize={20} style={{margin:'auto', marginTop:'80px', color:'#86C232', width:"90%"}}/>
+                    <GitHubCalendar username='arun24hrs' year={2023} transformTotalCount={false} blockSize={20} fontSize={14} style={{margin:'auto', marginTop:'80px', color:'#86C232', width:"90%", marginBottom:"50px"}}/>
                 </div>
 
             </div>

@@ -8,7 +8,7 @@ const TechSkills = () => {
         letterSpacing="2px"
         fontFamily={"cursive"}
         color={"brand.300"}
-        m="40px"
+        m={{base: "40px", md: "80px"}}
         backgroundColor={"brand.500"}
       >
         Technical Skills

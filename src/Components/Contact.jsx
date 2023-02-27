@@ -35,38 +35,42 @@ const Contact = () => {
       <HStack width={"100%"} justify="space-around" mt={"60px"} mb={"60px"}>
         <VStack alignItems={"center"}>
             {" "}
-            <Image
+            <Link href="https://github.com/arun24hrs" isExternal= "true"><Image
+            
               width={{ base: "30px", sm: "40px", md: "60px" }}
               src={github}
               alt="logo"
             />
+            </Link>
           <Link href="https://github.com/arun24hrs" isExternal="true" id="contact-github">
             <Text display={{ base: "none", md: "block" }}>GitHub</Text>
           </Link>
         </VStack>
         <VStack alignItems={"center"}>
-            <Image
+            <Link isExternal="true" href="https://www.linkedin.com/in/arun-kr-rana/"><Image
               width={{ base: "30px", sm: "40px", md: "60px" }}
               src={linkedin}
-            />
+            /></Link>
           <Link href="https://www.linkedin.com/in/arun-kr-rana/" isExternal="true" id="contact-linkedin">
             <Text display={{ base: "none", md: "block" }}>LinkedIn</Text>
           </Link>
         </VStack>
         <VStack alignItems={"center"}>
+            <Link href="tel:+91-9868494572">
             <Image
               width={{ base: "30px", sm: "40px", md: "60px" }}
               src={phone}
-            />
+            /></Link>
           <Link id="contact-phone" href="tel:+91-9868494572">
             <Text display={{ base: "none", md: "block" }}>+91-9868494572</Text>
           </Link>
         </VStack>
         <VStack alignItems={"center"}>
+            <Link href="mailto:2017arun.rana@gmail.com" isExternal="true">
             <Image
               width={{ base: "30px", sm: "40px", md: "60px" }}
               src={mail}
-            />
+            /></Link>
           <Link id="contact-email" href="mailto:2017arun.rana@gmail.com">
             <Text display={{ base: "none", md: "block" }}>
               2017arun.rana@gmail.com
