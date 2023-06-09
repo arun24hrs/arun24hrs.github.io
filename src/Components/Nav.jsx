@@ -146,7 +146,6 @@ export default function Nav() {
             transition: "0.5s",
           }}
           href="#github-stats"
-          className="nav-link skills"
         >
           GitHub Stats
         </Link>
@@ -166,23 +165,22 @@ export default function Nav() {
             Contact
           </Button>
         </a>
-        <a
-          href="https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=sharing"
-          target="_blank"
-        >
-          <Button
-            className="nav-link resume"
-            id="resume-button-1"
-            fontWeight={"light"}
-            backgroundColor={"#86C232"}
-            borderRadius={50}
-            _hover={{ backgroundColor: "brand.400" }}
-            size={{ base: "xs", sm: "sm", lg: "md" }}
-            onClick={handleDownload}
+        <Button
+        id="resume-button-1"
+              onClick={()=>{window.open('https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=sharing',"_blank")}}
+              variant="solid"
+              colorScheme={"brand"}
+              rounded={"full"}
+              size={"lg"}
+              fontWeight={"normal"}
+              px={6}
+              _hover={{ bg: "brand.400" }}
+            ><a id="resume-link-1" className= "nav-link resume"
+            href="/Arun_Rana_Resume.pdf" download
           >
-            Resume
-          </Button>
-        </a>
+              Resume
+            </a>
+            </Button>
       </Flex>
     </Flex>
   );

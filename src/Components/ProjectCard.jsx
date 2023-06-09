@@ -8,14 +8,16 @@ import {
   Image,
   useColorModeValue,
   Button,
-  Link
+  Link,
+  Tag
 } from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons"
 
-const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) => {
+const ProjectCard = ({ img, name, type, about, site, github, tech, duration }) => {
     // console.log(url)
   return (
-    <Flex py={6} bg="brand.500" class="project-card">
+    <div class="project-card">
+      <Flex py={6} bg="brand.500" >
       <Box
         maxW={{base: "280px", sm: "400px",md: "550px", lg: "550px"}}
         w={"full"}
@@ -63,7 +65,10 @@ const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) =>
           <Text color={"gray.300"} className="project-description">{about}</Text>
 
           <Text><span style={{color: "#86C232"}}>Duration: </span>{duration}</Text>
-          <Text className="project-tech-stack"><span style={{color: "#86C232"}}>Tech Stack: </span>{tech}</Text>
+          <span style={{color: "#86C232"}}>Tech Stack: </span>
+          <Flex>{tech.map((el)=>{
+            return <Tag key={el}  className="project-tech-stack">{el}</Tag>
+          })}</Flex>
         </Stack>
         <Stack
           mt={6}
@@ -72,8 +77,9 @@ const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) =>
           align={"Flex"}
           justifyContent="space-around"
         >
-          <Link class="project-deployed-link" href={site} _hover={{ textDecoration: "none" }} isExternal>
             <Button
+            onClick={()=>{window.open(site,"_blank")}}
+            class="project-deployed-link"
               variant="ghost"
               border={"1px solid white"}
               size={{base: "sm", md: "md"}}
@@ -81,15 +87,15 @@ const ProjectCard = ({ img, name, type, about, site, github,tech, duration }) =>
             >
               Visit Website
             </Button>
-          </Link>
-          <Link className="project-github-link" href={github} _hover={{ textDecoration: "none" }} isExternal>
-            <Button variant="solid" bg="brand.500" color="brand.300" _hover={{ bg: "brand.400", color: "white" }} size={{base: "sm", md: "md"}}>
+
+            <Button onClick={()=>{window.open(github,"_blank")}} className="project-github-link" variant="solid" bg="brand.500" color="brand.300" _hover={{ bg: "brand.400", color: "white" }} size={{base: "sm", md: "md"}}>
               Source Code
             </Button>
-          </Link>
+
         </Stack>
       </Box>
     </Flex>
+    </div>
   );
 };
 

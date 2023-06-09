@@ -10,16 +10,16 @@ const GithubStats = () => {
             <h2 id="github-stats" className={styles.heading}>My Github Statistics</h2>
             <div >
                 <div className={styles.images} >
-                    <div id="github-streak-stats">
-                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=arun24hrs&theme=dark&hide_border=false" alt="" />
+                    <div>
+                        <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=arun24hrs&theme=dark&hide_border=false" alt="" />
                     </div>
                     
-                    <div id="github-top-langs">
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arun24hrs&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="" />
+                    <div >
+                        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=arun24hrs&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="" />
                     </div>
                 
-                    <div id="github-stats-card">
-                        <img src="https://github-readme-stats.vercel.app/api?username=arun24hrs&theme=algolia&hide_border=false&include_all_commits=true&count_private=true&show_icons=true" alt="" />
+                    <div >
+                        <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=arun24hrs&theme=algolia&hide_border=false&include_all_commits=false&count_private=false&show_icons=true" alt="" />
                         
                     </div>
                 

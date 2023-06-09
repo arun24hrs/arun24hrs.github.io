@@ -13,10 +13,10 @@ const data = [
     name: "shapelink.com",
     type: "Solo Project",
     about:
-      "Twiik is a website that provides a fitness coach. People who are willing to virtually connect to a fitness coach can be here and fulfill their wish of being fit and healthy.",
+      "Twiik is a website that provides a fitness coach. People who are willing to virtually connect to a fitness coach can take subscription and fulfill their wish of being fit and healthy.",
     site: "https://lighthearted-horse-c63ac1.netlify.app/",
     github: "https://github.com/arun24hrs/twiik_clone",
-    tech: "HTML, CSS",
+    tech: ["HTML", "CSS"],
     duration: "5 days",
   },
   {
@@ -28,7 +28,7 @@ const data = [
       "Home Decore is a clone of Pepperfry that caters the need furnitures, lamps, carpets, home decore at best price. People who are planning to redefine their home and looking for home items can visit.",
     site: "https://home-interior-capitaln.vercel.app/",
     github: "https://github.com/capitalN/home_interior",
-    tech: "Next.js, CSS, Redux",
+    tech: ["Next.js", "CSS", "Redux"],
     duration: "6 days",
   },
   {
@@ -40,7 +40,7 @@ const data = [
       "LeadIQ is a platform of B2B sales prospecting tools. Find prospect data, track buying signals, & personalize cold outreach for outbound prospecting.",
     site: "https://verdant-pegasus-7472d3.netlify.app/",
     github: "https://github.com/VivBelwal/LeadiQ",
-    tech: "JS, HTML, CSS",
+    tech: ["JS", "HTML", "CSS"],
     duration: "5 days",
   },
   {
@@ -52,7 +52,7 @@ const data = [
       "Ketto is an Online Crowdfunding Platform and Website in India for fundraising of Social, Charity, Movies, Music, Personal and Creative causes.",
     site: "https://spontaneous-sprinkles-b69320.netlify.app/",
     github: "https://github.com/sofiyanshaikh008/versed-substance-8213",
-    tech: "JS, HTML, CSS",
+    tech: ["JS", "HTML", "CSS"],
     duration: "5 days",
   },
 ];

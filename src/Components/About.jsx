@@ -12,18 +12,18 @@ import bg from "../Images/portfolio_background.png";
 import photo from "../Images/dp.jpg";
 
 export default function About() {
-  const handleDownload = () => {
+//   const handleDownload = () => {
     
-    fetch('resume.pdf').then(response => {
-        response.blob().then(blob => {
-            const fileURL = window.URL.createObjectURL(blob);
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'Arun_Rana_Resume.pdf';
-            alink.click();
-        })
-    })
-}
+//     fetch('resume.pdf').then(response => {
+//         response.blob().then(blob => {
+//             const fileURL = window.URL.createObjectURL(blob);
+//             let alink = document.createElement('a');
+//             alink.href = fileURL;
+//             alink.download = 'Arun_Rana_Resume.pdf';
+//             alink.click();
+//         })
+//     })
+// }
   return (
     <Container id="about" className="about section" maxW={"7xl"} p={0}  >
       <Stack
@@ -88,24 +88,23 @@ export default function About() {
               Contact
             </Button>
             </a>
-            <a
-          href="https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=sharing"
-          target="_blank"
-        >
+            
             <Button
-              id="resume-button-2"
+              onClick={()=>{window.open('https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=sharing',"_blank")}}
               variant="solid"
               colorScheme={"brand"}
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              onClick={handleDownload}
+              // onClick={handleDownload}
               _hover={{ bg: "brand.400" }}
-            >
+            ><a id="resume-button-2"
+            href="/fw20_0972-Arun_Rana_Resume.pdf" download
+          >
               Resume
-            </Button>
             </a>
+            </Button>
           </Stack>
         </Stack>
         <Flex
