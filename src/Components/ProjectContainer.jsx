@@ -1,24 +1,37 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import twiik from "../Images/twiik.png";
+// import twiik from "../Images/twiik.png";
 import leadiq from "../Images/leadiq.png";
 import ketto from "../Images/ketto.png";
+import koovs from "../Images/koovs.png";
 import homeDecore from "../Images/homeDecore.png";
 import { Box, Heading } from "@chakra-ui/react";
 
 const data = [
   {
-    url: "https://drive.google.com/file/d/1MsS1-kMitpehK4FL2b1S8chQFGfL3-Ex/view?usp=sharing",
-    img: twiik,
-    name: "shapelink.com",
-    type: "Solo Project",
+    url: "https://drive.google.com/file/d/1iFGsytGZA32PDH_QtqHn33BfX5oQMSZP/view?usp=sharing",
+    img: koovs,
+    name: "koovs.com",
+    type: "Group Project",
     about:
-      "Twiik is a website that provides a fitness coach. People who are willing to virtually connect to a fitness coach can take subscription and fulfill their wish of being fit and healthy.",
-    site: "https://lighthearted-horse-c63ac1.netlify.app/",
-    github: "https://github.com/arun24hrs/twiik_clone",
-    tech: ["HTML", "CSS"],
+      "Koovs is an e-commerce platform which caters the needs of both men and women. Buy clothes and footwear online from our latest collection of fashion apparel, accessories & more.",
+    site: "https://koolz.vercel.app/",
+    github: "https://github.com/OnkarK0273/koovs-Website-Clone",
+    tech: ["Typescript", "Redux", "ChakraUI"],
     duration: "5 days",
   },
+  // {
+  //   url: "https://drive.google.com/file/d/1MsS1-kMitpehK4FL2b1S8chQFGfL3-Ex/view?usp=sharing",
+  //   img: twiik,
+  //   name: "shapelink.com",
+  //   type: "Solo Project",
+  //   about:
+  //     "Twiik is a website that provides a fitness coach. People who are willing to virtually connect to a fitness coach can take subscription and fulfill their wish of being fit and healthy.",
+  //   site: "https://lighthearted-horse-c63ac1.netlify.app/",
+  //   github: "https://github.com/arun24hrs/twiik_clone",
+  //   tech: ["HTML", "CSS"],
+  //   duration: "5 days",
+  // },
   {
     url: "https://drive.google.com/file/d/1NmMziggDj9QDkg4G97C7fQsk74H8DVu2/view?usp=sharing",
     img: homeDecore,

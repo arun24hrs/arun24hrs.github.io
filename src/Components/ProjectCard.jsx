@@ -9,12 +9,13 @@ import {
   useColorModeValue,
   Button,
   Link,
-  Tag
+  Tag,
+  background
 } from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons"
 
 const ProjectCard = ({ img, name, type, about, site, github, tech, duration }) => {
-    // console.log(url)
+    // console.log(tech)
   return (
     <div class="project-card">
       <Flex py={6} bg="brand.500" >
@@ -65,10 +66,11 @@ const ProjectCard = ({ img, name, type, about, site, github, tech, duration }) =
           <Text color={"gray.300"} className="project-description">{about}</Text>
 
           <Text><span style={{color: "#86C232"}}>Duration: </span>{duration}</Text>
-          <span style={{color: "#86C232"}}>Tech Stack: </span>
-          <Flex>{tech.map((el)=>{
+          <Text><span style={{color: "#86C232"}}>Teck Stack: </span>{tech.map((el)=>(`${el}, `))}</Text>
+          {/* <span style={{color: "#86C232"}}>Tech Stack: {tech}</span> */}
+          {/* <Flex>{tech.map((el)=>{
             return <Tag key={el}  className="project-tech-stack">{el}</Tag>
-          })}</Flex>
+          })}</Flex> */}
         </Stack>
         <Stack
           mt={6}
@@ -80,8 +82,9 @@ const ProjectCard = ({ img, name, type, about, site, github, tech, duration }) =
             <Button
             onClick={()=>{window.open(site,"_blank")}}
             class="project-deployed-link"
-              variant="ghost"
-              border={"1px solid white"}
+              // variant="alpha"
+              background={"brand.300"}
+              border="1px solid white"
               size={{base: "sm", md: "md"}}
               _hover={{ bg: "brand.500", color: "brand.300", borderColor: "brand.500" }}
             >

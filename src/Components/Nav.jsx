@@ -8,10 +8,6 @@ import {
   Collapse,
   Icon,
   Image,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  useColorModeValue,
   MenuDivider,
   useDisclosure,
   Link,
@@ -167,11 +163,11 @@ export default function Nav() {
         </a>
         <Button
         id="resume-button-1"
-              onClick={()=>{window.open('https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=sharing',"_blank")}}
+              onClick={()=>{window.open('https://1drv.ms/b/s!Aq8UXXTyXYSvmWJqdT0mu3vVbhhL?e=QqqTgo',"_blank")}}
               variant="solid"
               colorScheme={"brand"}
               rounded={"full"}
-              size={"lg"}
+              size={{ base: "xs", sm: "sm", lg: "md" }}
               fontWeight={"normal"}
               px={6}
               _hover={{ bg: "brand.400" }}

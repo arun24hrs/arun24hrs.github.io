@@ -39,7 +39,7 @@ export default function About() {
         >
         <Stack flex={1} p={10} spacing={{ base: 5, md: 10 }}>
             
-        <Heading color={"brand.500"} borderBottom={"3px solid white"} width={"130px"}>About</Heading>
+        <Heading color={"brand.500"} borderBottom={"3px solid white"} width={"130px"} display="none">About</Heading>
           <Heading
             lineHeight={0}
             fontWeight={600}
@@ -61,8 +61,8 @@ export default function About() {
             id="user-detail-intro"
           >
             An enthusiastic full stack web developer possessing skills of
-            developing websites using JavaScript, React.js, TypeScript, HTML and
-            CSS. Constantly learning and honing problem solving skills to be a
+            developing websites using JavaScript, React.js, Next.js, TypeScript, Redux, HTML and
+            CSS for frontend development and Node.js, Express.js, MongoDB for backend development. Constantly learning and honing problem solving skills to be a
             more efficient resource. Looking for an opportunity to build career
             as full-stack developer and put efforts in achieving organizational
             goals.
@@ -90,7 +90,8 @@ export default function About() {
             </a>
             
             <Button
-              onClick={()=>{window.open('https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=sharing',"_blank")}}
+            id="resume-button-1"
+            onClick={()=>{window.open('https://1drv.ms/b/s!Aq8UXXTyXYSvmWJqdT0mu3vVbhhL?e=QqqTgo',"_blank")}}
               variant="solid"
               colorScheme={"brand"}
               rounded={"full"}
@@ -100,7 +101,7 @@ export default function About() {
               // onClick={handleDownload}
               _hover={{ bg: "brand.400" }}
             ><a id="resume-button-2"
-            href="/fw20_0972-Arun_Rana_Resume.pdf" download
+            href="/Arun_Rana_Resume.pdf"  download
           >
               Resume
             </a>

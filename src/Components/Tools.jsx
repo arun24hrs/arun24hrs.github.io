@@ -88,7 +88,27 @@ const Tools = () => {
           />
         </Box>
 
-        <Box></Box>
+        <Box
+          bgColor="brand.500"
+          color="brand.500"
+          _hover={{ color: "brand.300", transition: "0.5s" }}
+        >
+          Postman
+          <Image
+            width={"75px"}
+            src={"https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/postman-icon.png"}
+            alt="logo"
+            boxShadow="rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
+            padding="10px"
+            bgColor="brand.500"
+            borderRadius="10px"
+            _hover={{
+              transform: "scale(1.3)",
+              translate: "0% 20%",
+              transition: "0.3s",
+            }}
+          />
+        </Box>
       </Box>
     </Box>
   );
