@@ -163,7 +163,7 @@ export default function Nav() {
         </a>
         <Button
         id="resume-button-1"
-              onClick={()=>{window.open('https://1drv.ms/b/s!Aq8UXXTyXYSvmWJqdT0mu3vVbhhL?e=QqqTgo',"_blank")}}
+              onClick={()=>{window.open('https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=drive_link',"_blank")}}
               variant="solid"
               colorScheme={"brand"}
               rounded={"full"}

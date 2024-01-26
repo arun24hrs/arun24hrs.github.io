@@ -6,6 +6,7 @@ import react from '../Images/react.svg'
 import redux from '../Images/redux.svg'
 import ts from '../Images/typescript.svg'
 import mongo from '../Images/mongodb.png'
+import scss from '../Images/sass.png'
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 
 const TechSkills = () => {
@@ -200,7 +201,7 @@ const TechSkills = () => {
           <Image
           className="skills-card-img"
             width={"75px"}
-            src="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png"
+            src={scss}
             alt="logo"
              boxShadow="rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
             padding="10px"

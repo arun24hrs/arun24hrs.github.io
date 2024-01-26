@@ -1,6 +1,7 @@
 import React from "react";
 import git from "../Images/git.png";
 import github from "../Images/github.png";
+import postman from "../Images/postman.png";
 import { Box, Heading, Image } from "@chakra-ui/react";
 
 const Tools = () => {
@@ -96,7 +97,7 @@ const Tools = () => {
           Postman
           <Image
             width={"75px"}
-            src={"https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/postman-icon.png"}
+            src={postman}
             alt="logo"
             boxShadow="rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
             padding="10px"
