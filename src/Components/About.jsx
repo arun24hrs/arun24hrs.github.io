@@ -45,6 +45,7 @@ export default function About() {
             fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
           >
             <Text
+            color={"#FFF"}
               id="user-detail-name"
               size="sm"
             >
@@ -72,20 +73,17 @@ export default function About() {
           >
             <a href="#contact">
             <Button
-              variant={"outline"}
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme={"brand"}
-              _hover={{
-                bg: "#86C232",
-                color: "brand",
-                border: "1px solid #86C232",
-              }}
-            >
-              Contact
-            </Button>
+          color="brand.500"
+          fontWeight="normal"
+            className="nav-link contact"
+            borderRadius={50}
+            border="1px solid #86C232"
+            bg={"none"}
+            _hover={{ backgroundColor: "brand.500", color: "#1A202C" }}
+            size={"lg"}
+          >
+            Contact
+          </Button>
             </a>
             
             <Button

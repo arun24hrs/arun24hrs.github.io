@@ -65,8 +65,8 @@ const ProjectCard = ({ img, name, type, about, site, github, tech, duration }) =
           </Heading>
           <Text color={"gray.300"} className="project-description">{about}</Text>
 
-          <Text><span style={{color: "#86C232"}}>Duration: </span>{duration}</Text>
-          <Text><span style={{color: "#86C232"}}>Teck Stack: </span>{tech.map((el)=>(`${el}, `))}</Text>
+          <Text color="#fff"><span style={{color: "#86C232"}}>Duration: </span>{duration}</Text>
+          <Text color="#fff"><span style={{color: "#86C232"}}>Teck Stack: </span>{tech.map((el)=>(`${el}, `))}</Text>
           {/* <span style={{color: "#86C232"}}>Tech Stack: {tech}</span> */}
           {/* <Flex>{tech.map((el)=>{
             return <Tag key={el}  className="project-tech-stack">{el}</Tag>
@@ -82,7 +82,8 @@ const ProjectCard = ({ img, name, type, about, site, github, tech, duration }) =
             <Button
             onClick={()=>{window.open(site,"_blank")}}
             class="project-deployed-link"
-              // variant="alpha"
+              color="brand.500"
+              fontWeight={"semibold"}
               background={"brand.300"}
               border="1px solid white"
               size={{base: "sm", md: "md"}}

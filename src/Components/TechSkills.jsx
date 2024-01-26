@@ -16,7 +16,9 @@ const TechSkills = () => {
     <Box pt={"10px"} backgroundColor={"brand.500"} id="skills" >
       <Heading
         letterSpacing="2px"
-        fontFamily={"cursive"}
+        fontFamily={"recursive"}
+        textTransform="uppercase"
+        fontSize={{ base: "20px", sm: "30px" }}
         color={"brand.300"}
         m={{base: "40px", md: "80px"}}
         backgroundColor={"brand.500"}

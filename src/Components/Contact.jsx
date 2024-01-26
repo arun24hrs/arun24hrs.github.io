@@ -22,9 +22,10 @@ const Contact = () => {
     <Box>
       <Heading
         id="contact"
-        fontFamily={"cursive"}
+        fontFamily={"recursive"}
+        textTransform="uppercase"
         color="#86C232"
-        fontSize={{ base: "20px", sm: "28px" }}
+        fontSize={{ base: "20px", sm: "30px" }}
         fontWeight="600"
         m={"40px"}
         letterSpacing="2px"

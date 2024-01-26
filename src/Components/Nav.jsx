@@ -148,12 +148,13 @@ export default function Nav() {
       <Flex gap={{ base: "8px", lg: "15px" }}>
         <a href="#contact">
           <Button
+          color="brand.500"
+          fontWeight="normal"
             className="nav-link contact"
-            fontWeight={"light"}
             borderRadius={50}
             border="1px solid #86C232"
             bg={"none"}
-            _hover={{ backgroundColor: "brand.500" }}
+            _hover={{ backgroundColor: "brand.500", color: "#1A202C" }}
             size={{ base: "xs", sm: "sm", lg: "md" }}
           >
             Contact

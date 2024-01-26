@@ -15,7 +15,7 @@ const theme = extendTheme({
       500: "#86C232",
     },
     fonts: {
-      heading: "cursive"
+      heading: "recursive"
     }
   }
 });

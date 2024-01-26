@@ -14,7 +14,7 @@ const data = [
     name: "koovs.com",
     type: "Group Project",
     about:
-      "Koovs is an e-commerce platform which caters the needs of both men and women. Buy clothes and footwear online from our latest collection of fashion apparel, accessories & more.",
+      "Koovs is an e-commerce platform which caters to the needs of both men and women. Buy clothes and footwear online from our latest collection of fashion apparel, accessories & more.",
     site: "https://koolz.vercel.app/",
     github: "https://github.com/OnkarK0273/koovs-Website-Clone",
     tech: ["Typescript", "Redux", "ChakraUI"],
@@ -83,7 +83,7 @@ const ProjectContainer = () => {
         backgroundColor="brand.500"
         fontFamily={"Recursive"}
         color="#222629"
-        fontSize="28px"
+        fontSize={{ base: "20px", sm: "30px" }}
         fontWeight="600"
         textTransform="uppercase"
         margin="40px"

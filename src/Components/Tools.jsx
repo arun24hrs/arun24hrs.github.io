@@ -8,8 +8,10 @@ const Tools = () => {
   return (
     <Box padding="50px" bgColor={"brand.500"} paddingBottom={"100px"}>
       <Heading
-        fontFamily={"cursive"}
+      textTransform="uppercase"
+        fontFamily={"recursive"}
         color={"brand.300"}
+        fontSize={{ base: "20px", sm: "30px" }}
         m="30px"
         backgroundColor={"brand.500"}
         letterSpacing="2px"
