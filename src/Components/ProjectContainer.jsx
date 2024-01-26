@@ -81,7 +81,7 @@ const ProjectContainer = () => {
     >
       <Heading
         backgroundColor="brand.500"
-        fontFamily={"cursive"}
+        fontFamily={"Recursive"}
         color="#222629"
         fontSize="28px"
         fontWeight="600"

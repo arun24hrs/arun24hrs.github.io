@@ -1,12 +1,12 @@
 /* colors = Grey #222629, #474B4F, #6B6E70, 
 green #61892F #86C232 */
-
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500&display=swap');
 *{
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   background-color: #222629;
-  font-family: cursive;
+  font-family: 'Recursive', sans-serif;
 }
 
 .App {

@@ -34,18 +34,18 @@ export default function Nav() {
   //   setSticky(false);
   // }
 
-  const handleDownload = () => {
+//   const handleDownload = () => {
     
-    fetch('resume.pdf').then(response => {
-        response.blob().then(blob => {
-            const fileURL = window.URL.createObjectURL(blob);
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'Arun_Rana_Resume.pdf';
-            alink.click();
-        })
-    })
-}
+//     fetch('resume.pdf').then(response => {
+//         response.blob().then(blob => {
+//             const fileURL = window.URL.createObjectURL(blob);
+//             let alink = document.createElement('a');
+//             alink.href = fileURL;
+//             alink.download = 'Arun_Rana_Resume.pdf';
+//             alink.click();
+//         })
+//     })
+// }
 
   return (
     <Flex
@@ -66,13 +66,13 @@ export default function Nav() {
       <Menu >
         <MenuButton as={Button} display={{base: "block", lg: "none"}} onClick={onToggle} variant={"ghost"} _hover={{bgColor:"brand.300", border:"1px solid"}} _active={{bgColor:"none", border:"2px solid #86C232"}}> <HamburgerIcon/></MenuButton>
         <MenuList bgColor="brand.300">
-          <a href="#" width="100%">Home</a>
+          <a href="/" width="100%">Home</a>
           <MenuDivider />
-          <a href="#about">About</a>
+          <a href="/about">About</a>
           <MenuDivider />
-          <a href="#projects">Projects</a>
+          <a href="/projects">Projects</a>
           <MenuDivider />
-          <a href="#skills">Skills</a>
+          <a href="/skills">Skills</a>
         </MenuList>
       </Menu>
       

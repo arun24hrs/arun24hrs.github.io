@@ -7,6 +7,8 @@ import redux from '../Images/redux.svg'
 import ts from '../Images/typescript.svg'
 import mongo from '../Images/mongodb.png'
 import scss from '../Images/sass.png'
+import tailwind from "../Images/tailwind.svg"
+import jquery from "../Images/jquery.svg"
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 
 const TechSkills = () => {
@@ -136,6 +138,21 @@ const TechSkills = () => {
           />
         </Box>
         <Box className="skills-card" bgColor="brand.500" color="brand.500"  _hover={{color: "brand.300", transition:"0.5s"}}>
+          jQuery
+        <Text className="skills-card-name"></Text>
+          <Image
+          className="skills-card-img"
+            width={"75px"}
+            src={jquery}
+            alt="logo"
+             boxShadow="rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
+            padding="10px"
+            bgColor="brand.500"
+            borderRadius="10px"
+            _hover={{transform:"scale(1.3)", translate:"0% 20%", transition:"0.3s"}}
+          />
+        </Box>
+        <Box className="skills-card" bgColor="brand.500" color="brand.500"  _hover={{color: "brand.300", transition:"0.5s"}}>
           Node.js
         <Text className="skills-card-name"></Text>
           <Image
@@ -186,7 +203,7 @@ const TechSkills = () => {
           <Image
           className="skills-card-img"
             width={"75px"}
-            src="https://vasterra.com/blog/wp-content/uploads/2021/08/Tailwind-img.png"
+            src={tailwind}
             alt="logo"
              boxShadow="rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
             padding="10px"
