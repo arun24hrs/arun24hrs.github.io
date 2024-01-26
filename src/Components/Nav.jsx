@@ -13,12 +13,10 @@ import {
   Link,
   Menu,
   MenuList,
-  MenuItem,
   MenuButton,
 } from "@chakra-ui/react";
 import {
-  HamburgerIcon,
-  CloseIcon
+  HamburgerIcon
 } from "@chakra-ui/icons";
 import logo from "../Images/pfolio_logo.png";
 import { useState } from "react";
