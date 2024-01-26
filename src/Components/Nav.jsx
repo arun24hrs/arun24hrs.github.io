@@ -64,13 +64,13 @@ export default function Nav() {
       <Menu >
         <MenuButton as={Button} display={{base: "block", lg: "none"}} onClick={onToggle} variant={"ghost"} _hover={{bgColor:"brand.300", border:"1px solid"}} _active={{bgColor:"none", border:"2px solid #86C232"}}> <HamburgerIcon/></MenuButton>
         <MenuList bgColor="brand.300">
-          <a href="/" width="100%">Home</a>
+          <a href="#" width="100%">Home</a>
           <MenuDivider />
-          <a href="/about">About</a>
+          <a href="#about">About</a>
           <MenuDivider />
-          <a href="/projects">Projects</a>
+          <a href="#projects">Projects</a>
           <MenuDivider />
-          <a href="/skills">Skills</a>
+          <a href="#skills">Skills</a>
         </MenuList>
       </Menu>
       
