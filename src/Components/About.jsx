@@ -91,7 +91,7 @@ export default function About() {
             
             <Button
             id="resume-button-1"
-            onClick={()=>{window.open('https://drive.google.com/file/d/18wXitz8_BBiXIaVl7kbHnaPaGxHstyXr/view?usp=drive_link',"_blank")}}
+            onClick={()=>{window.open('https://1drv.ms/b/s!Aq8UXXTyXYSvnGW-zwoq9I1ylkCB?e=nW9j3N',"_blank")}}
               variant="solid"
               colorScheme={"brand"}
               rounded={"full"}
