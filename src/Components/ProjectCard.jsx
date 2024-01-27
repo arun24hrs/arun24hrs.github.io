@@ -9,8 +9,7 @@ import {
   useColorModeValue,
   Button,
   Link,
-  Tag,
-  background
+
 } from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons"
 
@@ -82,9 +81,10 @@ const ProjectCard = ({ img, name, type, about, site, github, tech, duration }) =
             <Button
             onClick={()=>{window.open(site,"_blank")}}
             class="project-deployed-link"
-              color="brand.500"
+            variant="outline"
+              color="#86C232"
               fontWeight={"semibold"}
-              background={"brand.300"}
+              background={"brand.200"}
               border="1px solid white"
               size={{base: "sm", md: "md"}}
               _hover={{ bg: "brand.500", color: "brand.300", borderColor: "brand.500" }}
