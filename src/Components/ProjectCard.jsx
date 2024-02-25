@@ -80,8 +80,8 @@ const ProjectCard = ({ img, name, type, about, site, github, tech, duration }) =
         >
             <Button
             onClick={()=>{window.open(site,"_blank")}}
-            class="project-deployed-link"
-            variant="outline"
+            // class="project-deployed-link"
+            variant="solid"
               color="#86C232"
               fontWeight={"semibold"}
               background={"brand.200"}

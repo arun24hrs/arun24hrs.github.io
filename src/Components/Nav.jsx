@@ -162,7 +162,7 @@ export default function Nav() {
         </a>
         <Button
         id="resume-button-1"
-              onClick={()=>{window.open('https://1drv.ms/b/s!Aq8UXXTyXYSvnGW-zwoq9I1ylkCB?e=nW9j3N',"_blank")}}
+              onClick={()=>{window.open('https://1drv.ms/b/s!Aq8UXXTyXYSvnUnz5wdsasOzqiEy?e=iJznps',"_blank")}}
               variant="solid"
               colorScheme={"brand"}
               rounded={"full"}
